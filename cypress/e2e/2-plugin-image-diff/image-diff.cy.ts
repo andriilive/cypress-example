@@ -15,42 +15,36 @@ const versionURL = (blob: string = 'main') => `https://github.com/andriilive/and
 
 // Versions to snapshot
 const versions: {
-  id: string,
-  blob: string,
-  options?: {
+  id: string, blob: string, options?: {
     [key: string]: any
   }
 }[] = [
   {
-    id: 'main',
-    blob: 'main'
+    id: 'prev', blob: '33986d42333385341ccf331626156db827c92c9e',
   },
   {
-    id: 'dev',
-    blob: '33986d42333385341ccf331626156db827c92c9e',
-  },
+    id: 'old', blob: 'ef9fab87acdc20ef113f4a52e75eb769da3d5ecd'
+  }
 ]
 
 describe('cypress-image-diff-js', () => {
 
-  versions.map(({id, blob, options}) => {
+  versions.forEach(({id, blob, options}) => {
+
+    const name_id = `snap-diff-${id}-markdown`
 
     beforeEach(() => {
-      const url = versionURL(blob)
-      cy.visit(url)
+      cy.visit(versionURL('main'))
+      cy.get('#repos-sticky-header').hideElement()
+      cy.get('article.markdown-body').compareSnapshot(name_id)
     })
 
-    it(`snap-diff-${id}-markdown`, {
+    it(name_id, {
       scrollBehavior: "center",
     }, () => {
+      cy.visit(versionURL(blob))
       cy.get('#repos-sticky-header').hideElement()
-      cy.get('article.markdown-body').compareSnapshot({
-        name: 'snap-diff-readme-markdown',
-        exactName: true,
-        cypressScreenshotOptions: {
-          capture: "fullPage"
-        }
-      })
+      cy.get('article.markdown-body').compareSnapshot(name_id)
     })
 
 

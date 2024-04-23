@@ -146,3 +146,5 @@ cypress/videos/*
 
 ### Cypress Image Diff
 cypress/visual-test-report/*
+cypress-image-diff-html-report/*
+!cypress-image-diff-html-report/.gitkeep

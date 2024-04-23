@@ -9,14 +9,14 @@
  *
  * @type {import('@cy/types').ImageDiffPluginConfigOptions}
  **/
+
 const config = {
   ROOT_DIR: 'cypress',
   SCREENSHOTS_DIR: 'screenshots',
   REPORT_DIR: 'visual-test-report',
-  FAILURE_THRESHOLD: 0.99,
-  JSON_REPORT: {
-    FILENAME: 'cypress_visual_report',
-    OVERWRITE: true
+  FAILURE_THRESHOLD: 0.5,
+  COMPARISON_OPTIONS: {
+    threshold: 0.1
   },
   CYPRESS_SCREENSHOT_OPTIONS: {
     disableTimersAndAnimations: true,

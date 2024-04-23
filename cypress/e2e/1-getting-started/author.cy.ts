@@ -8,8 +8,8 @@ describe('author', () => {
 
   it('captures the authors page screenshot', () => {
     cy.go_home()
-    // Take a snapshot for visual regression testing
-    cy.screenshot('authors-github-readme')
+    cy.get('.position-sticky .Layout').invoke('css', 'opacity', 0)
+    cy.screenshot('authors-github')
   })
 
   it('download author.json', () => {

@@ -22,8 +22,10 @@
     "cypress:run:chrome": "npm run cypress:run -- --browser chrome",
     "cypress:run:firefox": "npm run cypress:run -- --browser firefox",
     "cypress:run:safari": "cypress run --browser webkit --headed",
-    "diff:gen": "cypress-image-diff-html-report generate",
-    "diff": "cypress-image-diff-html-report start --auto-open"
+    "diff:generate": "cypress-image-diff-html-report generate -o './cypress-image-diff-html-report' --rd './cypress/visual-test-report' --inlineAssets",
+    "diff:serve": "cypress-image-diff-html-report start --rd './cypress/visual-test-report' --autoOpen",
+    "diff-ts": "bun run ./cypress/utils/diff.ts",
+    "clean": "rm -rf cypress/screenshots/* cypress/downloads/* cypress/visual-test-report/*"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",

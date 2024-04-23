@@ -2,6 +2,10 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "isolatedModules": true,
     "moduleResolution": "bundler",
     "target": "esnext",
     "lib": [
@@ -13,17 +17,18 @@
       "node",
       "cypress"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
       "@cy/*": [
-        "./cypress/*"
+        "cypress/*"
+      ],
+      "~/*": [
+        "*"
       ]
     }
   },
   "include": [
-    "**/*.ts"
+    "**/*.ts",
+    "scripts.ts"
   ]
 }

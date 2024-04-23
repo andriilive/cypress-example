@@ -1,9 +1,6 @@
 import {defineConfig} from 'cypress-image-diff-html-report'
 
-/*** @type {ImageDiffHtmlReportPluginConfigOptions} */
-const config = {
+export default defineConfig({
   reportJsonDir: 'visual-test-report',
-  outputDir: 'visual-test-report'
-}
-
-export default defineConfig(config)
+  outputDir: 'cypress-image-diff-html-report'
+})
