@@ -13,4 +13,5 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 // Import commands.ts using ts path alias syntax:
+
 import '@cy/support/commands'

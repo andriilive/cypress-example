@@ -9,7 +9,9 @@ describe('author', () => {
   it('captures the authors page screenshot', () => {
     cy.go_home()
     cy.get('.position-sticky .Layout').invoke('css', 'opacity', 0)
-    cy.screenshot('authors-github')
+    cy.screenshot('authors-github', {
+      onAfterScreenshot($el, props) {}
+    })
   })
 
   it('download author.json', () => {

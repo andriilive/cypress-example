@@ -14,12 +14,16 @@ const config = {
   ROOT_DIR: 'cypress',
   SCREENSHOTS_DIR: 'screenshots',
   REPORT_DIR: 'visual-test-report',
-  FAILURE_THRESHOLD: 0.5,
+  FAILURE_THRESHOLD: 0,
   COMPARISON_OPTIONS: {
     threshold: 0.1
   },
   CYPRESS_SCREENSHOT_OPTIONS: {
     disableTimersAndAnimations: true,
+  },
+  JSON_REPORT: {
+    FILENAME: '',
+    OVERWRITE: false,
   }
 }
 
