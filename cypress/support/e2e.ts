@@ -1,5 +1,3 @@
-import compareSnapshotCommand from 'cypress-image-diff-js';
-
 // ***********************************************************
 // This example support/e2e.ts is processed and
 // loaded automatically before your test files.
@@ -16,6 +14,3 @@ import compareSnapshotCommand from 'cypress-image-diff-js';
 // ***********************************************************
 // Import commands.ts using ts path alias syntax:
 import '@cy/support/commands'
-
-// Add plugin cypress-image-diff-js commands
-compareSnapshotCommand();

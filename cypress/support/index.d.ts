@@ -1,12 +1,12 @@
-/// <reference types="cypress" />
-/// <reference types="cypress-image-diff-js" />
-
 // TS2669: Augmentations for the global scope can only be directly nested in external modules or ambient module declarations.
 // https://stackoverflow.com/questions/57132428/augmentations-for-the-global-scope-can-only-be-directly-nested-in-external-modul
+
 export {};
 
 declare global {
+
   namespace Cypress {
+
     interface Chainable {
       /**
        * Visit author's website
@@ -39,11 +39,10 @@ declare global {
         options?: Partial<VisitOptions>
       ): Chainable<AUTWindow>;
 
+      // TODO: clean this up
       // advanced example fixing the types
       drag(options: any): void
-
       dismiss(options: any): void
-
       console(method: any): any
     }
   }

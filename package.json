@@ -22,7 +22,8 @@
     "cypress:run:chrome": "npm run cypress:run -- --browser chrome",
     "cypress:run:firefox": "npm run cypress:run -- --browser firefox",
     "cypress:run:safari": "cypress run --browser webkit --headed",
-    "compare-snapshots": "cypress-image-diff-html-report start --autoOpen"
+    "diff:gen": "cypress-image-diff",
+    "diff": "cypress-image-diff-html-report start --auto-open"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",

@@ -2,19 +2,18 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "target": "es5",
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "target": "esnext",
     "lib": [
-      "es5",
-      "dom"
+      "esnext",
+      "dom",
+      "dom.iterable"
     ],
     "types": [
       "node",
       "cypress"
-    ],
-    "typeRoots": [
-      "node_modules/@types",
-      "node_modules/cypress/types",
-      "node_modules/cypress-image-diff-js/types"
     ],
     "baseUrl": ".",
     "paths": {
@@ -23,16 +22,10 @@
       ],
       "@cy/*": [
         "./cypress/*"
-      ],
-      "@e2e/*": [
-        "./cypress/e2e/*"
       ]
     }
   },
   "include": [
-    "**/*.ts",
-    "cypress/**/*.ts",
-    "cypress.config.ts",
-    "./*.config.ts"
+    "**/*.ts"
   ]
 }
