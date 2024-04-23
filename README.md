@@ -7,6 +7,7 @@ This is a simple example of how to use Cypress to test a web application.
 - TypeScript
 - [JB Aqua](https://www.jetbrains.com/aqua) project
 - [Cypress](https://www.cypress.io/) >= 13
+- Chrome, Firefox, Safari
 
 ## Scripts
 
@@ -16,8 +17,14 @@ Use JB Aqua to run the following scripts:
 # Install
 npm install
 
-# Run
+# Open Cypress
 npm run cypress:open
+
+# Run Headless Tests (Electron)
 npm run cypress:run
+
+# Run Headless Tests (Chrome, Firefox, Safari)
 npm run cypress:run:chrome
+npm run cypress:run:firefox
+npm run cypress:run:safari
 ```

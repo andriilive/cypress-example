@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 import requiredExample from '@cy/fixtures/example.json'
 
 context('Files', () => {

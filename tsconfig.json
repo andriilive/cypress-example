@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "resolveJsonModule": true,
+    "esModuleInterop": true,
     "target": "es5",
     "lib": [
       "es5",
@@ -9,6 +10,10 @@
     "types": [
       "node",
       "cypress"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/cypress/types"
     ],
     "baseUrl": ".",
     "paths": {

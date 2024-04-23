@@ -19,7 +19,9 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:run:chrome": "npm run cypress:run -- --browser chrome"
+    "cypress:run:chrome": "npm run cypress:run -- --browser chrome",
+    "cypress:run:firefox": "npm run cypress:run -- --browser firefox",
+    "cypress:run:safari": "npm run cypress:run -- --browser webkit"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
