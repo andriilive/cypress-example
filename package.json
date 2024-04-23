@@ -21,11 +21,14 @@
     "cypress:run": "cypress run",
     "cypress:run:chrome": "npm run cypress:run -- --browser chrome",
     "cypress:run:firefox": "npm run cypress:run -- --browser firefox",
-    "cypress:run:safari": "npm run cypress:run -- --browser webkit"
+    "cypress:run:safari": "cypress run --browser webkit --headed"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
     "cypress": "^13.8.0",
     "typescript": "^5.4.5"
+  },
+  "optionalDependencies": {
+    "playwright-webkit": "1.34"
   }
 }

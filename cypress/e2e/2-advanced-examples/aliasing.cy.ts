@@ -1,4 +1,3 @@
-
 context('Aliasing', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/aliasing')

@@ -1,4 +1,3 @@
-
 context('Cypress APIs', () => {
 
   context('Cypress.Commands', () => {

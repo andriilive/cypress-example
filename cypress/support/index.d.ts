@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 // TS2669: Augmentations for the global scope can only be directly nested in external modules or ambient module declarations.
 // https://stackoverflow.com/questions/57132428/augmentations-for-the-global-scope-can-only-be-directly-nested-in-external-modul
 export {};

@@ -1,4 +1,3 @@
-
 context('Navigation', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io')
