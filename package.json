@@ -1,0 +1,30 @@
+{
+  "name": "cypress-example",
+  "version": "1.0.0",
+  "description": "Cypress example",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriilive/cypress-example.git"
+  },
+  "author": {
+    "name": "Andrii Iv. (@digitalandyeu)",
+    "url": "https://digitalandy.eu",
+    "email": "hi@digitalandy.eu"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/andriilive/cypress-example#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:chrome": "npm run cypress:run -- --browser chrome"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "@types/node": "^20.12.7",
+    "cypress": "^13.8.0",
+    "typescript": "^5.4.5"
+  }
+}

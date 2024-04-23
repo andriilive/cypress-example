@@ -136,6 +136,7 @@ dist
 cypress/results/*
 cypress/reports/*
 cypress/screenshots/*
+cypress/downloads/*
 cypress/videos/*
 
 ### JetBrains template

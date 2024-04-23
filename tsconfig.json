@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "target": "es5",
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "node",
+      "cypress",
+      "jquery"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@cy/*": [
+        "./cypress/*"
+      ],
+      "@e2e/*": [
+        "./cypress/e2e/*"
+      ]
+    }
+  },
+  "include": [
+    "cypress/**/*.ts",
+    "cypress.config.ts",
+    "cypress.d.ts"
+  ]
+}
