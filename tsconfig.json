@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "allowJs": true,
     "target": "es5",
     "lib": [
       "es5",
@@ -10,8 +8,7 @@
     ],
     "types": [
       "node",
-      "cypress",
-      "jquery"
+      "cypress"
     ],
     "baseUrl": ".",
     "paths": {
@@ -27,8 +24,8 @@
     }
   },
   "include": [
+    "**/*.ts",
     "cypress/**/*.ts",
-    "cypress.config.ts",
-    "cypress.d.ts"
+    "cypress.config.ts"
   ]
 }

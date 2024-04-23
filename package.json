@@ -22,7 +22,6 @@
     "cypress:run:chrome": "npm run cypress:run -- --browser chrome"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.29",
     "@types/node": "^20.12.7",
     "cypress": "^13.8.0",
     "typescript": "^5.4.5"
