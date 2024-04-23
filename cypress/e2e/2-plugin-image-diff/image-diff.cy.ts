@@ -78,7 +78,8 @@ describe('cypress-image-diff-js', () => {
       log: true,
       timeout: 60000,
     }).then((result) => {
-      console.log(result.stdout);
+      cy.log('generated image diff report, open static version manually in the browser:')
+      cy.log('open cypress-image-diff-html-report/index.html -a "Google Chrome"')
     });
 
   })
