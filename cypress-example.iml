@@ -4,6 +4,8 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/cypress/screenshots" />
+      <excludeFolder url="file://$MODULE_DIR$/cypress/downloads" />
       <excludeFolder url="file://$MODULE_DIR$/cypress/generated" />
       <excludeFolder url="file://$MODULE_DIR$/cypress/generated/downloads" />
       <excludeFolder url="file://$MODULE_DIR$/cypress/generated/image-diff-html" />

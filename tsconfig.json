@@ -2,9 +2,7 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
     "moduleResolution": "bundler",
-    "module": "esnext",
     "target": "esnext",
     "lib": [
       "esnext",

@@ -12,7 +12,7 @@
     "email": "hi@digitalandy.eu"
   },
   "license": "ISC",
-  "homepage": "https://github.com/andriilive/cypress-example#readme",
+  "homepage": "https://github.com/andriilive",
   "engines": {
     "node": ">=20"
   },
@@ -22,7 +22,7 @@
     "cypress:run:chrome": "npm run cypress:run -- --browser chrome",
     "cypress:run:firefox": "npm run cypress:run -- --browser firefox",
     "cypress:run:safari": "cypress run --browser webkit --headed",
-    "diff:gen": "cypress-image-diff",
+    "diff:gen": "cypress-image-diff-html-report generate",
     "diff": "cypress-image-diff-html-report start --auto-open"
   },
   "devDependencies": {

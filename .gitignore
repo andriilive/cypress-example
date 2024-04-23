@@ -146,4 +146,3 @@ cypress/videos/*
 
 ### Cypress Image Diff
 cypress/visual-test-report/*
-!cypress/visual-test-report/*.json
