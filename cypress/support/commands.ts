@@ -1,5 +1,5 @@
 import {AUTHOR_HOME} from "@cy/const";
-import compareSnapshotCommand from 'cypress-image-diff-js';
+
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -15,9 +15,6 @@ Cypress.Commands.overwrite('visit', (visitOriginalFn, url: string, options?: Par
 
 // Register a custom command
 Cypress.Commands.add('go_home', () => cy.visit(AUTHOR_HOME))
-
-// Add plugin cypress-image-diff-js commands
-compareSnapshotCommand();
 
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })

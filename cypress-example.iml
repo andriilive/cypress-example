@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/cypress/screenshots" />
       <excludeFolder url="file://$MODULE_DIR$/cypress/downloads" />
+      <excludeFolder url="file://$MODULE_DIR$/cypress/snapshots" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
