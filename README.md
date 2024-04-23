@@ -7,7 +7,8 @@ This is a simple example of how to use Cypress to test a web application.
 - TypeScript
 - [JB Aqua](https://www.jetbrains.com/aqua) project
 - [Cypress](https://www.cypress.io/) >= 13
-- Chrome, Firefox, Safari
+- Chrome, Firefox, Safari browsers
+- [cypress-image-diff](https://github.com/uktrade/cypress-image-diff) plugin
 
 ## Scripts
 

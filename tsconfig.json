@@ -13,7 +13,8 @@
     ],
     "typeRoots": [
       "node_modules/@types",
-      "node_modules/cypress/types"
+      "node_modules/cypress/types",
+      "node_modules/cypress-image-diff-js/types"
     ],
     "baseUrl": ".",
     "paths": {
